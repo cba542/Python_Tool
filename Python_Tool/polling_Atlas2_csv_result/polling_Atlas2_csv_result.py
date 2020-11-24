@@ -12,14 +12,17 @@ import os
 import csv
 
 #define the condition want to polling
+#testName	              subTestName  subSubTestName  upperLimit	measurementValue  lowerLimit	status  failureMessage
+#CPort2CIO20GHostEyeTest  CPort2UP	   P2L1_ew	       50	        24.24242424	      15	        PASS    ...
 def checkCSV(row):
-    Status = row[12] 
-    testName = row[2] 
-    upLimit = row[6]
-    lowLimit = row[7]
-    measueValue = row[8]
+    testName = row[2]
+    subTestName = row[3]
     subSubTestName = row[4]
-    subTestName = row[5]
+    upperLimit = row[6]
+    measurementValue = row[7]
+    lowerLimit = row[8]
+    status = row[12]
+    failureMessage = row[13]
     #condition in the csv want to check     
     # if row[12] == "FAIL" or "_ew" in row[4] and row[6] == "50" or "Through" in row[2]:
     #condition in the csv want to check
@@ -28,7 +31,8 @@ def checkCSV(row):
     # if  Status == "FAIL" or "_ew" in subSubTestName and upLimit == "50" or "Through" in row[2]:
     # if subSubTestName == "OverallTestResult" and Status == "FAIL":
     # if "VoltageTest" in testName:
-    if "DyMa" in testName and Status == "FAIL": 
+    # if "DyMa" in testName and status == "FAIL": 
+    if "Host" in testName:
         return True
     else:
         return False
@@ -40,7 +44,10 @@ Root_path = "/Users/cheng_sam/zhengh8x/Code/Python_Tool/Python_Tool/polling_Atla
 FAIL_count = 0
 DUT_count = 0
 myfile =  open("result.txt", "w")
-myfile.write("testName                          subTestName                    upperLimit           measurementValue     lowerLimit           status\n")
+result_format = "%-33s %-60s %-20s %-20s %-20s %-7s %-s"
+
+myfile.write( (result_format +"\n") % (("testName","subTestName","subSubTestName","measurementValue","lowerLimit","status","failureMessage")))
+
 for r, d, f in os.walk(Root_path):
     for file in f:
 
@@ -71,7 +78,7 @@ for r, d, f in os.walk(Root_path):
 
                     
                     #用於顯示結果fine tune
-                    result_str = ("%-33s %-30s %-20s %-20s %-20s %-9s" % ((row[2],row[4],row[6],row[7],row[8],row[12])))
+                    result_str = (result_format % ((row[2],row[4],row[6],row[7],row[8],row[12],row[13])))
                     myfile.write(result_str + "\n")
                     display = display + result_str
 
