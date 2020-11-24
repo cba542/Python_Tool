@@ -1,0 +1,59 @@
+testName                          subTestName                    upperLimit           measurementValue     lowerLimit           status
+DyMagsafeAdapterVoltageTest5V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00C03FY-2/20201124_15-55-36.089-2A74A0/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00C03FY-3/20201124_15-55-36.089-B6E483/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00303FY-1/20201124_15-55-36.089-351C28/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00B03FY-3/20201124_15-55-36.089-15421B/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00B03FY-2/20201124_15-55-36.089-74A627/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00203FY-1/20201124_15-55-36.089-A58964/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00K03G5-1/20201124_15-55-36.089-9E4566/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest5V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00C03FY-1/20201124_15-55-36.089-D2172D/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00303FY-3/20201124_15-55-36.089-752142/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00303FY-2/20201124_15-55-36.089-A0E813/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest5V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest15V    OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTestReset  OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00B03FY-1/20201124_15-55-36.089-A5343F/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest5V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest15V    OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTestReset  OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00203FY-2/20201124_15-55-36.089-B2B9F7/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest20V    OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00K03G5-3/20201124_15-55-36.089-B67C90/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest5V     OverallTestResult              1                    0                    0                    FAIL     
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00203FY-3/20201124_15-55-36.089-4A9C20/records.csv
+============================================================================================================================================================
+DyMagsafeAdapterVoltageTest9V     OverallTestResult              1                    0                    0                    FAIL     
+P2s_dryrun/C02DN00K03G5-2/20201124_15-55-36.089-2CF2A5/records.csv
+============================================================================================================================================================

@@ -1,6 +1,10 @@
 #Python Regular Expression Exapmle Note
 import re
 
+
+a = re.match('ab..','abcd').group()
+print(a) # abcd
+
 a = re.match('ab..','abcd').group()
 print(a) # abcd
 
