@@ -1,0 +1,1 @@
+pyinstaller --onefile /Users/cheng_sam/zhengh8x/Tool/AutoBurgundy/v12_app11/theBurgundy_Toolv12app11.py

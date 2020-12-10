@@ -1,0 +1,5 @@
+As I know. For example.
+When you ping the box
+mac-mini -> router -> box
+When you ping the DUT
+mac-mini -> router -> usb to ethernet cable -> box -> DUT
