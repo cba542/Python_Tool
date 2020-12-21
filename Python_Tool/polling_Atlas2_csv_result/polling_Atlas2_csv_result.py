@@ -26,15 +26,17 @@ def checkCSV(row):
     status = row[12]
     failureMessage = row[13]
     # if "OverallTestResult" in subTestName:
-    if "PresenceDUTCheck"  and "SS" in testName and "Data" not in testName and "Throughput" not in testName:
-        if status == "FAIL" : 
-            
+    # if "PresenceDUTCheck"  and "SS" in testName and "Data" not in testName and "Throughput" not in testName:
+        # if status == "FAIL" : 
+            # return True
     # if "CPort1UPUSBCAdapterVoltageTest5V" in testName :
         # if "DxVD" in keyName or "VD0R" in keyName:
-            return True
+            # return True
     # if "DxVD" in keyName  and "CPort1UPUSBCAdapterVoltageTest5V" in testName or "VD0R" in keyName:
     # if status == "PASS" :  
-    # if status == "FAIL" :          
+    if status == "FAIL" :      
+        # if "Reset" not in testName:
+            # return True
     # if status == "FAIL" or status == "PASS":
     # if  Status == "FAIL" or "_ew" in subSubTestName and upLimit == "50" or "Through" in row[2]:
     # if subSubTestName == "OverallTestResult" and Status == "FAIL":
@@ -42,14 +44,25 @@ def checkCSV(row):
     # if "DyMa" in testName and status == "FAIL": 
     # if "Host" in testName:
     # if "ID0R failed to reached target current" in failureMessage:
-        # return True
+        return True
     else:
         return False
 
+def checkCSVPassFail(row):
+
+    status = row[12]
+ 
+    if status == "FAIL" :      
+        return True
+    else:
+        return False
 
 Root_path = "/Users/cheng_sam/zhengh8x/Code/Python_Tool/Python_Tool/polling_Atlas2_csv_result/"
-FAIL_count = 0
-DUT_count = 0
+Fail_Count = 0
+DUT_Count = 0
+DUT_Criterion_Match_Count = 0
+
+
 myfile =  open("result.txt", "w")
 
 
@@ -59,7 +72,7 @@ for r, d, f in os.walk(Root_path):
     for file in f:
 
         if 'records.csv' in file:
-
+            DUT_Status = 1
             FilePath = (os.path.join(r, file))
             #放在ignore資料夾底下的檔案不處理, 方便debug
             if "ignore" in FilePath:
@@ -78,6 +91,12 @@ for r, d, f in os.walk(Root_path):
                 #ingore STOP_DEVICE FAIL
                 if row[2] == "STOP_DEVICE":
                         continue
+                    
+                #To calculate the Fail Rate
+                if DUT_Status == 1:
+                    if checkCSVPassFail(row):
+                        DUT_Status = 0
+                    
                 #condition in the csv want to check     
                 # if row[12] == "FAIL" or "_ew" in row[4] and row[6] == "50" or "Through" in row[2]:
                 #condition in the csv want to check                       
@@ -90,19 +109,32 @@ for r, d, f in os.walk(Root_path):
                     display = display + result_str
 
             if len(display) > 0:
-                print(SN, "FAIL")
-                FAIL_count += 1
+                DUT_Criterion_Match_Count += 1
+                print(SN, "Match criterion")
                 _FilePath = FilePath.replace("/Users/cheng_sam/zhengh8x/Code/Python_Tool/Python_Tool/polling_Atlas2_csv_result/","")
-                myfile.write(_FilePath + "\n")
+                myfile.write("(" +  str(Fail_Count+1) + ")" + _FilePath + "\n")
                 myfile.write(("============================================================================================================================================================"+ "\n"))
             else:
-                print(SN, "PASS")
-            DUT_count += 1
+                print(SN, "Not Match criterion")
 
-print("%d Fail/%d Total, RR = %f %%" % (FAIL_count, DUT_count, (FAIL_count/DUT_count) *100))
-os.popen("open /Users/cheng_sam/zhengh8x/Code/Python_Tool/Python_Tool/polling_Atlas2_csv_result/result.txt")
+            #To calculate the Fail Rate
+            if DUT_Status == 0:
+                Fail_Count += 1
+            DUT_Count += 1
 
-csvFile.close()
+            
+            csvFile.close()
+
+            
+if DUT_Count is not 0:
+    print("%d Fail/%d Total, Match Rate = %f %%" % (Fail_Count, DUT_Criterion_Match_Count, (Fail_Count/DUT_Criterion_Match_Count) *100))
+    print("%d Fail/%d Total, Fail  Rate = %f %%" % (Fail_Count, DUT_Count, (Fail_Count/DUT_Count) *100))
+    myfile.write("\n%d Fail/%d Total, Match Rate = %f %%" % (Fail_Count, DUT_Criterion_Match_Count, (Fail_Count/DUT_Criterion_Match_Count) *100))
+    myfile.write("\n%d Fail/%d Total, Fail  Rate = %f %%" % (Fail_Count, DUT_Count, (Fail_Count/DUT_Count) *100))
+    os.popen("open /Users/cheng_sam/zhengh8x/Code/Python_Tool/Python_Tool/polling_Atlas2_csv_result/result.txt")
+else:
+    print("No input csv")
+# csvFile.close()
 myfile.close()
     
 
