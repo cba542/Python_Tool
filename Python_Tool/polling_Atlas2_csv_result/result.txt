@@ -1,178 +1,36 @@
 testName                            subTestName                                                  upperLimit   measurementValue     lowerLimit   status  failureMessage
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             activeHorizontalWidth                                        3840         0                    3840         FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             activeVerticalWidth                                          2160         0                    2160         FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiRedCRC                                                   1091990384   0                    1091990384   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiBlueCRC                                                  4146409858   0                    4146409858   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiGreenCRC                                                 4146409858   0                    4146409858   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: activeHorizontalWidth; Limit FAIL on: activeVerticalWidth; Fail to upload data to PDCA with error: ...local/Library/Atlas2/Modules/AlitaTestCore/AlitaTest.lua:74: add PDCA error: value is inf(infinity); Limit FAIL on: hdmiRedCRC; Limit FAIL on: hdmiBlueCRC; Limit FAIL on: hdmiGreenCRC; 
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Fail to get eye capture result for Lane 0: {
-    NSLocalizedDescription = " [HDMI4kTestBoxEyeCapture] Test Device Error: Fail to measure HDMI eye  Command ERROR: code = 0x5200008C";
-}; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             P2L0_ns                                                      NA           47.60000000000001    100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L0_ew                                                      46           10.60606060606061    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ns                                                      NA           66.64000000000001    100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ew                                                      50           6.060606060606061    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: P2L0_ns; Limit FAIL on: P2L0_ew; Limit FAIL on: P2L1_ns; Limit FAIL on: P2L1_ew; 
-(1)log/1125IO1DRYRUN/C02DJ0050M10-1x/20201125_16-45-37.591-81BC1C/records.csv
+SystemDOWNUSBLSPresenceDUTCheck     DeviceEnumeration                                            1            0                    0            FAIL    No user failure message was provided
+SystemDOWNUSBLSPresenceDUTCheck     OverallTestResult                                            1            0                    0            FAIL    CPort1DOWN is not enumerated; 
+(1)log/316_LS_FS_HS/group1-slot0/records.csv
 ============================================================================================================================================================
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             activeHorizontalWidth                                        3840         0                    3840         FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             activeVerticalWidth                                          2160         0                    2160         FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiRedCRC                                                   1091990384   0                    1091990384   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiBlueCRC                                                  4146409858   0                    4146409858   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             hdmiGreenCRC                                                 4146409858   0                    4146409858   FAIL    No user failure message was provided
-ATCHDMIDisplayPattern4K             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: activeHorizontalWidth; Limit FAIL on: activeVerticalWidth; Fail to upload data to PDCA with error: ...local/Library/Atlas2/Modules/AlitaTestCore/AlitaTest.lua:74: add PDCA error: value is inf(infinity); Limit FAIL on: hdmiRedCRC; Limit FAIL on: hdmiBlueCRC; Limit FAIL on: hdmiGreenCRC; 
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Fail to get eye capture result for Lane 0: {
-    NSLocalizedDescription = " [HDMI4kTestBoxEyeCapture] Test Device Error: Fail to measure HDMI eye  Command ERROR: code = 0x5200008C";
-}; 
-CPort0CIO20GPresenceTest            OverallTestResult                                            1            0                    0            FAIL    runTest errored: ...Atlas2/Modules/AlitaTestCore/AlitaUnits/AlitaEFIUnit.lua:33: {
-    ErrorLocation = "ATICommStack.m:-[ATICommStack sendCommandString:timeout:error:]:482";
-    NSLocalizedDescription = "Response returned cannot be converted to string using NSUTF8StringEncoding";
-}; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Fail to parse eye log for Lane 0
-CPort1CIO20GD2RRetimerEyeTest       Lane1CenterEyeWidthInSteps                                   35           9                    10           FAIL    No user failure message was provided
-CPort1CIO20GD2RRetimerEyeTest       OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane1CenterEyeWidthInSteps; 
-(2)log/1125IO1DRYRUN/C02DJ0050M10-2x/20201125_16-45-37.591-928E7E/records.csv
+SystemUPUSBLSPresenceDUTCheck       DeviceEnumeration                                            1            0                    0            FAIL    No user failure message was provided
+SystemUPUSBLSPresenceDUTCheck       OverallTestResult                                            1            0                    0            FAIL    CPort0UP is not enumerated; 
+(2)log/316_LS_FS_HS/group0-slot0/records.csv
 ============================================================================================================================================================
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane0HDMIEyeHeight                                           NA           70                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane1HDMIEyeHeight                                           NA           50                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane2HDMIEyeHeight                                           NA           65                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane0HDMIEyeHeight; Limit FAIL on: Lane1HDMIEyeHeight; Limit FAIL on: Lane2HDMIEyeHeight; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             P2L0_ns                                                      NA           28.56                100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L0_ew                                                      46           2.272727272727272    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Fail to parse eye log for Lane 1Limit FAIL on: P2L0_ns; Limit FAIL on: P2L0_ew; 
-CPort2CIO20GR2DRetimerEyeTest       Lane0CenterEyeWidthInSteps                                   35           1                    10           FAIL    No user failure message was provided
-CPort2CIO20GR2DRetimerEyeTest       OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane0CenterEyeWidthInSteps; 
-CPort2CIO20GD2RRetimerEyeTest       OverallTestResult                                            1            0                    0            FAIL    Failed to capture retimer eye for lane0:...Atlas2/Modules/AlitaTestCore/AlitaUnits/AlitaEFIUnit.lua:33: {
-    ErrorLocation = "ATICommStack.m:-[ATICommStack sendCommandData:timeout:error:]:439";
-    NSLocalizedDescription = "Timed out waiting for response for command 'IntelThunderboltEyeMonitor -protocol CIO -rid 0 -route 2 -port 0 -lane 0 -PortOnRetimer 1 -Retimer_ind 1 -count 1048575 -print_eye -print_params'";
-}; 
-CPort0UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:277: Failed to read SMC keys
-CPort0UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:277: Failed to read SMC keys
-CPort0UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest20V   VD0R                                                         21000        4179.096             17850        FAIL    No user failure message was provided
-CPort1UPUSBCAdapterVoltageTest20V   DxVD                                                         21000        4193.548             17850        FAIL    No user failure message was provided
-CPort1UPUSBCAdapterVoltageTest20V   DCR_Adapter2BuckBoost                                        0.5          5.319027647930444    NA           FAIL    No user failure message was provided
-CPort1UPUSBCAdapterVoltageTest20V   OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: VD0R; Limit FAIL on: DxVD; Limit FAIL on: DCR_Adapter2BuckBoost; 
-CPort2UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest15V   VD0R                                                         15750        19460.403            13500        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest15V   DxVD                                                         15750        4985.337             13500        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: VD0R; Limit FAIL on: DxVD; 
-CPort2UPUSBCAdapterVoltageTest20V   VD0R                                                         21000        8201.903             17850        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   DxVD                                                         21000        8240.468000000001    17850        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   DCR_Adapter2BuckBoost                                        0.5          3.931226567461366    NA           FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: VD0R; Limit FAIL on: DxVD; Limit FAIL on: DCR_Adapter2BuckBoost; 
-(3)log/1125IO1DRYRUN/C02DJ00R0M05_1X/20201125_16-45-37.591-9F8DEB/records.csv
+SystemDOWNUSBLSPresenceDUTCheck     DeviceEnumeration                                            1            0                    0            FAIL    No user failure message was provided
+SystemDOWNUSBLSPresenceDUTCheck     OverallTestResult                                            1            0                    0            FAIL    CPort1DOWN is not enumerated; 
+(3)log/316_LS_FS_HS/group1-slot0 2/records.csv
 ============================================================================================================================================================
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane0HDMIEyeHeight                                           NA           80                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane1HDMIEyeHeight                                           NA           50                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane2HDMIEyeHeight                                           NA           55                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane0HDMIEyeHeight; Limit FAIL on: Lane1HDMIEyeHeight; Limit FAIL on: Lane2HDMIEyeHeight; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Fail to parse eye log for Lane 0
-(4)log/1125IO1DRYRUN/C02DJ00R0M05-2x/20201125_16-45-37.591-796091/records.csv
+SystemDOWNUSBLSPresenceDUTCheck     DeviceEnumeration                                            1            0                    0            FAIL    No user failure message was provided
+SystemDOWNUSBLSPresenceDUTCheck     OverallTestResult                                            1            0                    0            FAIL    CPort2DOWN is not enumerated; 
+(4)log/316_LS_FS_HS/group3-slot0 2/records.csv
 ============================================================================================================================================================
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane0HDMIEyeHeight                                           NA           75                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane1HDMIEyeHeight                                           NA           40                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane2HDMIEyeHeight                                           NA           55                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane0HDMIEyeHeight; Limit FAIL on: Lane1HDMIEyeHeight; Limit FAIL on: Lane2HDMIEyeHeight; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             P2L0_ns                                                      NA           28.56                100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L0_ew                                                      46           1.515151515151515    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ns                                                      NA           38.08000000000001    100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ew                                                      50           3.03030303030303     15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: P2L0_ns; Limit FAIL on: P2L0_ew; Limit FAIL on: P2L1_ns; Limit FAIL on: P2L1_ew; 
-CPort2CIO20GD2RRetimerEyeTest       OverallTestResult                                            1            0                    0            FAIL    Failed to capture retimer eye for lane1:...Atlas2/Modules/AlitaTestCore/AlitaUnits/AlitaEFIUnit.lua:33: {
-    ErrorLocation = "ATICommStack.m:-[ATICommStack sendCommandData:timeout:error:]:439";
-    NSLocalizedDescription = "Timed out waiting for response for command 'IntelThunderboltEyeMonitor -protocol CIO -rid 0 -route 2 -port 0 -lane 1 -PortOnRetimer 1 -Retimer_ind 1 -count 1048575 -print_eye -print_params'";
-}; 
-CPort0UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:277: Failed to read SMC keys
-CPort0UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:277: Failed to read SMC keys
-CPort0UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:277: Failed to read SMC keys
-CPort0UPUSBCAdapterVoltageTest20V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort1UPUSBCAdapterVoltageTest20V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest5V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest9V    OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest15V   OverallTestResult                                            1            0                    0            FAIL    Failed to negotiate pd contract at runTest, error: ...cal/Library/Atlas2/Actions/USBCAdapterVoltageTest_v2.lua:301: Failed to parse SMC keys
-CPort2UPUSBCAdapterVoltageTest20V   VD0R                                                         21000        16758.852            17850        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   DxVD                                                         21000        4281.524             17850        FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   DCR_Adapter2BuckBoost                                        0.5          1.225030527188269    NA           FAIL    No user failure message was provided
-CPort2UPUSBCAdapterVoltageTest20V   OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: VD0R; Limit FAIL on: DxVD; Limit FAIL on: DCR_Adapter2BuckBoost; 
-(5)log/1125IO1DRYRUN/C02DJ00A0M0Y-1X/20201125_16-45-37.591-E5C662/records.csv
+Result Fail Rate Check
+  4 Fail/  6 Total, Match Rate = 66.666667 %
+  6 Fail/  6 Total, Fail  Rate = 100.000000 %
 ============================================================================================================================================================
-CPort0UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort0UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort1UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        SMCSleepWakeTest                                             1            0                    0            FAIL    No user failure message was provided
-CPort2UPPortOrientationCheck        OverallTestResult                                            1            0                    0            FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane0HDMIEyeHeight                                           NA           70                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane1HDMIEyeHeight                                           NA           45                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             Lane2HDMIEyeHeight                                           NA           65                   100          FAIL    No user failure message was provided
-HDMI4kTestBoxEyeCapture             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: Lane0HDMIEyeHeight; Limit FAIL on: Lane1HDMIEyeHeight; Limit FAIL on: Lane2HDMIEyeHeight; 
-CPort2CIO20GTunableCheck_314        atc2_l0_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        atc2_l1_pma_rxa_ctlecz_gray_gen4                             8            1                    8            FAIL    No user failure message was provided
-CPort2CIO20GTunableCheck_314        OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: atc2_l0_pma_rxa_ctlecz_gray_gen4; Limit FAIL on: atc2_l1_pma_rxa_ctlecz_gray_gen4; 
-CPort2CIO20GHostEyeTest             P2L0_ns                                                      NA           66.64000000000001    100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L0_ew                                                      46           4.545454545454545    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ns                                                      NA           28.56                100          FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             P2L1_ew                                                      50           4.545454545454545    15           FAIL    No user failure message was provided
-CPort2CIO20GHostEyeTest             OverallTestResult                                            1            0                    0            FAIL    Limit FAIL on: P2L0_ns; Limit FAIL on: P2L0_ew; Limit FAIL on: P2L1_ns; Limit FAIL on: P2L1_ew; 
-SystemReset                         OverallTestResult                                            1            0                    0            FAIL    Fail to send command to dut, error: ...Atlas2/Modules/AlitaTestCore/AlitaUnits/AlitaEFIUnit.lua:33: {
-    ErrorLocation = "ATICommStack.m:-[ATICommStack sendCommandData:timeout:error:]:439";
-    NSLocalizedDescription = "Timed out waiting for response for command 'reset'";
-}; 
-(6)log/1125IO1DRYRUN/C02DJ00A0M0Y-2x/20201125_16-45-37.591-32A196/records.csv
+DUTs Fail Rate Check
+C02DV00G03FQ 1R/1T
+C02DV01F03G0 1R/1T
+C02DW00N03FT 1R/1T
+C02DV01C03G0 1R/1T
+C02DV00603G6 1R/1T
+C02DV01703G0 1R/1T
 ============================================================================================================================================================
-
-6 Fail/6 Total, Match Rate = 100.000000 %
-6 Fail/6 Total, Fail  Rate = 100.000000 %
+DUTs Match Condition Check
+C02DV00G03FQ 1MT/1T
+C02DV01F03G0 0MT/1T
+C02DW00N03FT 0MT/1T
+C02DV01C03G0 1MT/1T
+C02DV00603G6 1MT/1T
+C02DV01703G0 1MT/1T
